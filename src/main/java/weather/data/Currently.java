@@ -16,6 +16,15 @@ public class Currently {
     private long temperature;
     private double humidity;
     private int preciprobability;
+    private long visibility;
+
+    public long getVisibility() {
+        return visibility;
+    }
+
+    public void setVisibility(long visibility) {
+        this.visibility = visibility;
+    }
 
     public long getId() {
         return id;

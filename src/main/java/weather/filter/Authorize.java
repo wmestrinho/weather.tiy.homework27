@@ -27,7 +27,7 @@ public class Authorize implements Filter {
         boolean tryingToLogin = req.getRequestURI().endsWith("/open/login.jsp")||req.getRequestURI().endsWith("authenticate");
         if(authorized || tryingToLogin) {
             chain.doFilter(request, response);
-        }else{
+        } else{
             resp.sendRedirect("/open/login.jsp");
         }
     }

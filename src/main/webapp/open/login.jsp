@@ -3,7 +3,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>The Grateful Wall</title>
+    <title>Weather or NOT</title>
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -19,6 +19,7 @@
         <li><a href="/open/login.jsp"><h4>Login</h4></a></li>
         <li><a href="/secure/weather.jsp"><h4>Check Weather</h4></a></li>
         <li><a href="/secure/history"><h4>History</h4></a></li>
+        <li><a href="/secure/display.jsp"><h4>Display</h4></a></li>
     </ul>
 
 </nav>

@@ -14,6 +14,16 @@ public class DailyForecast {
     private Double longitude;
     @OneToOne(cascade = CascadeType.ALL)
     private Currently currently;
+    @ManyToOne
+    private Guest guest;
+
+    public Guest getGuest() {
+        return guest;
+    }
+
+    public void setGuest(Guest guest) {
+        this.guest = guest;
+    }
 
     public DailyForecast() {
     }

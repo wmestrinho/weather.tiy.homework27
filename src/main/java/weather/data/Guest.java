@@ -3,6 +3,8 @@ package weather.data;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.persistence.OneToMany;
+import java.util.List;
 
 /**
  * Created by WagnerMestrinho on 2/28/17.
@@ -14,6 +16,16 @@ public class Guest {
         private long id;
         private String name;
         private String password;
+        @OneToMany(mappedBy = "guest")
+        private List<DailyForecast> dailyForecasts;
+
+    public List<DailyForecast> getDailyForecasts() {
+        return dailyForecasts;
+    }
+
+    public void setDailyForecasts(List<DailyForecast> dailyForecasts) {
+        this.dailyForecasts = dailyForecasts;
+    }
 
     public long getId() {
         return id;
